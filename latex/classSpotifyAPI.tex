@@ -1,0 +1,360 @@
+\hypertarget{classSpotifyAPI}{}\doxysection{Spotify\+API Class Reference}
+\label{classSpotifyAPI}\index{SpotifyAPI@{SpotifyAPI}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSpotifyAPI_a8a5dc3930e3f12f6002bc386833ccad1}{Spotify\+API}} (const string \&client\+Id, const string \&client\+Secret)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classSpotifyAPI}{Spotify\+API}} class. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classSpotifyAPI_a5272f19a94e8ee3499301b85e19c7a99}{get\+Track\+Details}} (const string \&access\+Token, const string \&track\+Id)
+\begin{DoxyCompactList}\small\item\em public method to fetch track details using the Spotify Web API \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classSpotifyAPI_a965677a15acdddf84b8a181a49bc2bbd}{get\+Playlist\+Details}} (const string \&access\+Token, const string \&playlist\+Id)
+\begin{DoxyCompactList}\small\item\em public method to fetch playlist details using the Spotify Web API \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSpotifyAPI_a21f5163464ea83e4b260f7a419da9a7e}\label{classSpotifyAPI_a21f5163464ea83e4b260f7a419da9a7e}} 
+vector$<$ string $>$ {\bfseries extract\+Track\+IDS} (string \&playlist\+Json)
+\item 
+string \mbox{\hyperlink{classSpotifyAPI_a65f8da2af68acb783da0784636f65343}{extract\+Playlist\+ID}} (const string \&url)
+\begin{DoxyCompactList}\small\item\em extracts playlist\textquotesingle{}s ID using the playlist url \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSpotifyAPI_a4e8751bf9aaa2e214ed273a05d9f505a}{download\+Track\+Img}} (const string \&track\+Details\+Json, const string \&track\+ID, const QString \&output\+Path)
+\begin{DoxyCompactList}\small\item\em downloads the album cover for the desired track \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classSpotifyAPI_a9d7d7936493a8acda02cf4f7d42c1027}{get\+Access\+Token}} ()
+\begin{DoxyCompactList}\small\item\em Getter method for the access token. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classSpotifyAPI_a4b438abf764a107d1dbfa1a7db491291}{get\+Volume\+Percent}} ()
+\begin{DoxyCompactList}\small\item\em getter method returns current volume percent on spotify instance \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classSpotifyAPI_a5fc2fc84257bbdfeadfa3ddf8c856e1c}{create\+Playlist}} (const string \&client\+Id, const string \&playlist\+Name)
+\begin{DoxyCompactList}\small\item\em method used to create playlists \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classSpotifyAPI_a1236686f4f0daa84ddec52801d8e296a}{exchange\+Auth\+Code\+For\+Access\+Code}} (const string \&code, const string \&redirect\+Uri)
+\begin{DoxyCompactList}\small\item\em method used to generate access code using Authorization code \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classSpotifyAPI_a2a44d8c33df666618af3c47a394d58e1}{get\+User\+ID}} ()
+\begin{DoxyCompactList}\small\item\em getter method used to return the user ID \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classSpotifyAPI_a4ee83017cf9848b2d92cc45d5f1544a8}{get\+Device\+ID}} ()
+\begin{DoxyCompactList}\small\item\em getter method used to return the Device ID \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSpotifyAPI_a242a44f91eefffe07bef71b0d22afc98}{resume\+Playback}} (const string \&access\+Token)
+\begin{DoxyCompactList}\small\item\em method used to play a paused track \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSpotifyAPI_a7204fbe7dfc432e54cb966031824459e}{play\+Track\+On\+Spotify}} (const string \&access\+Token, const string \&track\+ID)
+\begin{DoxyCompactList}\small\item\em method used to play a scpeific track on spotify \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSpotifyAPI_adca6067f1b829acd7048f10483edf489}{pause\+Track\+On\+Spotify}} (const string \&access\+Token)
+\begin{DoxyCompactList}\small\item\em method used to pause the track that is currently playing \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSpotifyAPI_a67f43560f74c43a19a3cb0eafcdb608a}{set\+Volume}} (const string \&access\+Token, int volume\+Percent)
+\begin{DoxyCompactList}\small\item\em method used to set the volume on spotify \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classSpotifyAPI_ade954004937d662e21105ab122d8fbdb}{get\+Current\+Track}} (const string \&access\+Token)
+\begin{DoxyCompactList}\small\item\em getter method used to return the track which is currently playing \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSpotifyAPI_a4cdce51fe1f6c2ace5e8c30163bb83f9}{add\+Track\+To\+Playlist}} (const string \&access\+Token, const string \&playlist\+ID, const string \&track\+ID)
+\begin{DoxyCompactList}\small\item\em method used to add a track to the desired playlist \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSpotifyAPI_a1cad92e9c861a3e369a4459094305fa7}{play\+Playlist\+On\+Spotify}} (const string \&access\+Token, const string \&playlist\+ID)
+\begin{DoxyCompactList}\small\item\em method used to play desired playlist on spotify \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSpotifyAPI_a8a5dc3930e3f12f6002bc386833ccad1}\label{classSpotifyAPI_a8a5dc3930e3f12f6002bc386833ccad1}} 
+\index{SpotifyAPI@{SpotifyAPI}!SpotifyAPI@{SpotifyAPI}}
+\index{SpotifyAPI@{SpotifyAPI}!SpotifyAPI@{SpotifyAPI}}
+\doxysubsubsection{\texorpdfstring{SpotifyAPI()}{SpotifyAPI()}}
+{\footnotesize\ttfamily Spotify\+API\+::\+Spotify\+API (\begin{DoxyParamCaption}\item[{const string \&}]{client\+Id,  }\item[{const string \&}]{client\+Secret }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{classSpotifyAPI}{Spotify\+API}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em client\+Id} & is the client id obtained from the developer dashboard \\
+\hline
+{\em client\+Secret} & is the client secret obtained from the developer dashboard \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSpotifyAPI_a4cdce51fe1f6c2ace5e8c30163bb83f9}\label{classSpotifyAPI_a4cdce51fe1f6c2ace5e8c30163bb83f9}} 
+\index{SpotifyAPI@{SpotifyAPI}!addTrackToPlaylist@{addTrackToPlaylist}}
+\index{addTrackToPlaylist@{addTrackToPlaylist}!SpotifyAPI@{SpotifyAPI}}
+\doxysubsubsection{\texorpdfstring{addTrackToPlaylist()}{addTrackToPlaylist()}}
+{\footnotesize\ttfamily void Spotify\+API\+::add\+Track\+To\+Playlist (\begin{DoxyParamCaption}\item[{const string \&}]{access\+Token,  }\item[{const string \&}]{playlist\+ID,  }\item[{const string \&}]{track\+ID }\end{DoxyParamCaption})}
+
+
+
+method used to add a track to the desired playlist 
+
+
+\begin{DoxyParams}{Parameters}
+{\em access\+Token} & string containg access token \\
+\hline
+{\em playlist\+ID} & string containing the id of the desired playlist \\
+\hline
+{\em track\+ID} & string containing the id of the desired track to add to playlist \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSpotifyAPI_a5fc2fc84257bbdfeadfa3ddf8c856e1c}\label{classSpotifyAPI_a5fc2fc84257bbdfeadfa3ddf8c856e1c}} 
+\index{SpotifyAPI@{SpotifyAPI}!createPlaylist@{createPlaylist}}
+\index{createPlaylist@{createPlaylist}!SpotifyAPI@{SpotifyAPI}}
+\doxysubsubsection{\texorpdfstring{createPlaylist()}{createPlaylist()}}
+{\footnotesize\ttfamily string Spotify\+API\+::create\+Playlist (\begin{DoxyParamCaption}\item[{const string \&}]{client\+ID,  }\item[{const string \&}]{playlist\+Name }\end{DoxyParamCaption})}
+
+
+
+method used to create playlists 
+
+
+\begin{DoxyParams}{Parameters}
+{\em playlist\+Name} & string which contains the name of the created playlist \\
+\hline
+{\em client\+Id} & string containing ID of client \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+id string containing id of playlist 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSpotifyAPI_a4e8751bf9aaa2e214ed273a05d9f505a}\label{classSpotifyAPI_a4e8751bf9aaa2e214ed273a05d9f505a}} 
+\index{SpotifyAPI@{SpotifyAPI}!downloadTrackImg@{downloadTrackImg}}
+\index{downloadTrackImg@{downloadTrackImg}!SpotifyAPI@{SpotifyAPI}}
+\doxysubsubsection{\texorpdfstring{downloadTrackImg()}{downloadTrackImg()}}
+{\footnotesize\ttfamily void Spotify\+API\+::download\+Track\+Img (\begin{DoxyParamCaption}\item[{const string \&}]{track\+Details\+Json,  }\item[{const string \&}]{track\+ID,  }\item[{const QString \&}]{output\+Path }\end{DoxyParamCaption})}
+
+
+
+downloads the album cover for the desired track 
+
+
+\begin{DoxyParams}{Parameters}
+{\em track\+Details\+Json} & JSON string which contains the track details \\
+\hline
+{\em track\+Id} & ID of track \\
+\hline
+{\em output\+Path} & Path where image is saved \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSpotifyAPI_a1236686f4f0daa84ddec52801d8e296a}\label{classSpotifyAPI_a1236686f4f0daa84ddec52801d8e296a}} 
+\index{SpotifyAPI@{SpotifyAPI}!exchangeAuthCodeForAccessCode@{exchangeAuthCodeForAccessCode}}
+\index{exchangeAuthCodeForAccessCode@{exchangeAuthCodeForAccessCode}!SpotifyAPI@{SpotifyAPI}}
+\doxysubsubsection{\texorpdfstring{exchangeAuthCodeForAccessCode()}{exchangeAuthCodeForAccessCode()}}
+{\footnotesize\ttfamily string Spotify\+API\+::exchange\+Auth\+Code\+For\+Access\+Code (\begin{DoxyParamCaption}\item[{const string \&}]{code,  }\item[{const string \&}]{redirect\+Uri }\end{DoxyParamCaption})}
+
+
+
+method used to generate access code using Authorization code 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & string containing Authorization code \\
+\hline
+{\em redirect\+Uri} & string containing redirect URI \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+read\+Buffer string containing access code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSpotifyAPI_a65f8da2af68acb783da0784636f65343}\label{classSpotifyAPI_a65f8da2af68acb783da0784636f65343}} 
+\index{SpotifyAPI@{SpotifyAPI}!extractPlaylistID@{extractPlaylistID}}
+\index{extractPlaylistID@{extractPlaylistID}!SpotifyAPI@{SpotifyAPI}}
+\doxysubsubsection{\texorpdfstring{extractPlaylistID()}{extractPlaylistID()}}
+{\footnotesize\ttfamily string Spotify\+API\+::extract\+Playlist\+ID (\begin{DoxyParamCaption}\item[{const string \&}]{url }\end{DoxyParamCaption})}
+
+
+
+extracts playlist\textquotesingle{}s ID using the playlist url 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The Spotify playlist URL from which to extract the playlist ID. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The extracted playlist ID if found, otherwise an empty string. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSpotifyAPI_a9d7d7936493a8acda02cf4f7d42c1027}\label{classSpotifyAPI_a9d7d7936493a8acda02cf4f7d42c1027}} 
+\index{SpotifyAPI@{SpotifyAPI}!getAccessToken@{getAccessToken}}
+\index{getAccessToken@{getAccessToken}!SpotifyAPI@{SpotifyAPI}}
+\doxysubsubsection{\texorpdfstring{getAccessToken()}{getAccessToken()}}
+{\footnotesize\ttfamily string Spotify\+API\+::get\+Access\+Token (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter method for the access token. 
+
+\begin{DoxyReturn}{Returns}
+the access token used for authentication (Auth 2.)o 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSpotifyAPI_ade954004937d662e21105ab122d8fbdb}\label{classSpotifyAPI_ade954004937d662e21105ab122d8fbdb}} 
+\index{SpotifyAPI@{SpotifyAPI}!getCurrentTrack@{getCurrentTrack}}
+\index{getCurrentTrack@{getCurrentTrack}!SpotifyAPI@{SpotifyAPI}}
+\doxysubsubsection{\texorpdfstring{getCurrentTrack()}{getCurrentTrack()}}
+{\footnotesize\ttfamily string Spotify\+API\+::get\+Current\+Track (\begin{DoxyParamCaption}\item[{const string \&}]{access\+Token }\end{DoxyParamCaption})}
+
+
+
+getter method used to return the track which is currently playing 
+
+
+\begin{DoxyParams}{Parameters}
+{\em access\+Token} & string containg access token \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+read\+Buffer string containing the track which is currently playing on spotify 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSpotifyAPI_a4ee83017cf9848b2d92cc45d5f1544a8}\label{classSpotifyAPI_a4ee83017cf9848b2d92cc45d5f1544a8}} 
+\index{SpotifyAPI@{SpotifyAPI}!getDeviceID@{getDeviceID}}
+\index{getDeviceID@{getDeviceID}!SpotifyAPI@{SpotifyAPI}}
+\doxysubsubsection{\texorpdfstring{getDeviceID()}{getDeviceID()}}
+{\footnotesize\ttfamily string Spotify\+API\+::get\+Device\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getter method used to return the Device ID 
+
+\begin{DoxyReturn}{Returns}
+id string containing the device ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSpotifyAPI_a965677a15acdddf84b8a181a49bc2bbd}\label{classSpotifyAPI_a965677a15acdddf84b8a181a49bc2bbd}} 
+\index{SpotifyAPI@{SpotifyAPI}!getPlaylistDetails@{getPlaylistDetails}}
+\index{getPlaylistDetails@{getPlaylistDetails}!SpotifyAPI@{SpotifyAPI}}
+\doxysubsubsection{\texorpdfstring{getPlaylistDetails()}{getPlaylistDetails()}}
+{\footnotesize\ttfamily string Spotify\+API\+::get\+Playlist\+Details (\begin{DoxyParamCaption}\item[{const string \&}]{access\+Token,  }\item[{const string \&}]{playlist\+Id }\end{DoxyParamCaption})}
+
+
+
+public method to fetch playlist details using the Spotify Web API 
+
+
+\begin{DoxyParams}{Parameters}
+{\em access\+Token} & used for authentication \\
+\hline
+{\em playlist\+Id} & used to isolate which playlist\textquotesingle{}s details are being searched \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+read\+Buffer variable which stores metadata on playlist 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSpotifyAPI_a5272f19a94e8ee3499301b85e19c7a99}\label{classSpotifyAPI_a5272f19a94e8ee3499301b85e19c7a99}} 
+\index{SpotifyAPI@{SpotifyAPI}!getTrackDetails@{getTrackDetails}}
+\index{getTrackDetails@{getTrackDetails}!SpotifyAPI@{SpotifyAPI}}
+\doxysubsubsection{\texorpdfstring{getTrackDetails()}{getTrackDetails()}}
+{\footnotesize\ttfamily string Spotify\+API\+::get\+Track\+Details (\begin{DoxyParamCaption}\item[{const string \&}]{access\+Token,  }\item[{const string \&}]{track\+Id }\end{DoxyParamCaption})}
+
+
+
+public method to fetch track details using the Spotify Web API 
+
+
+\begin{DoxyParams}{Parameters}
+{\em access\+Token} & used for authentication \\
+\hline
+{\em track\+Id} & used to isolate which song\textquotesingle{}s details are being searched \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+read\+Buffer variable which stores metadata on track 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSpotifyAPI_a2a44d8c33df666618af3c47a394d58e1}\label{classSpotifyAPI_a2a44d8c33df666618af3c47a394d58e1}} 
+\index{SpotifyAPI@{SpotifyAPI}!getUserID@{getUserID}}
+\index{getUserID@{getUserID}!SpotifyAPI@{SpotifyAPI}}
+\doxysubsubsection{\texorpdfstring{getUserID()}{getUserID()}}
+{\footnotesize\ttfamily string Spotify\+API\+::get\+User\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getter method used to return the user ID 
+
+\begin{DoxyReturn}{Returns}
+user\+ID string containing the user ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSpotifyAPI_a4b438abf764a107d1dbfa1a7db491291}\label{classSpotifyAPI_a4b438abf764a107d1dbfa1a7db491291}} 
+\index{SpotifyAPI@{SpotifyAPI}!getVolumePercent@{getVolumePercent}}
+\index{getVolumePercent@{getVolumePercent}!SpotifyAPI@{SpotifyAPI}}
+\doxysubsubsection{\texorpdfstring{getVolumePercent()}{getVolumePercent()}}
+{\footnotesize\ttfamily int Spotify\+API\+::get\+Volume\+Percent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getter method returns current volume percent on spotify instance 
+
+\begin{DoxyReturn}{Returns}
+volume\+Percent 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSpotifyAPI_adca6067f1b829acd7048f10483edf489}\label{classSpotifyAPI_adca6067f1b829acd7048f10483edf489}} 
+\index{SpotifyAPI@{SpotifyAPI}!pauseTrackOnSpotify@{pauseTrackOnSpotify}}
+\index{pauseTrackOnSpotify@{pauseTrackOnSpotify}!SpotifyAPI@{SpotifyAPI}}
+\doxysubsubsection{\texorpdfstring{pauseTrackOnSpotify()}{pauseTrackOnSpotify()}}
+{\footnotesize\ttfamily void Spotify\+API\+::pause\+Track\+On\+Spotify (\begin{DoxyParamCaption}\item[{const string \&}]{access\+Token }\end{DoxyParamCaption})}
+
+
+
+method used to pause the track that is currently playing 
+
+
+\begin{DoxyParams}{Parameters}
+{\em access\+Token} & string containg access token \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSpotifyAPI_a1cad92e9c861a3e369a4459094305fa7}\label{classSpotifyAPI_a1cad92e9c861a3e369a4459094305fa7}} 
+\index{SpotifyAPI@{SpotifyAPI}!playPlaylistOnSpotify@{playPlaylistOnSpotify}}
+\index{playPlaylistOnSpotify@{playPlaylistOnSpotify}!SpotifyAPI@{SpotifyAPI}}
+\doxysubsubsection{\texorpdfstring{playPlaylistOnSpotify()}{playPlaylistOnSpotify()}}
+{\footnotesize\ttfamily void Spotify\+API\+::play\+Playlist\+On\+Spotify (\begin{DoxyParamCaption}\item[{const string \&}]{access\+Token,  }\item[{const string \&}]{playlist\+ID }\end{DoxyParamCaption})}
+
+
+
+method used to play desired playlist on spotify 
+
+
+\begin{DoxyParams}{Parameters}
+{\em access\+Token} & string containg access token \\
+\hline
+{\em playlist\+ID} & string containing the id of the desired playlist \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSpotifyAPI_a7204fbe7dfc432e54cb966031824459e}\label{classSpotifyAPI_a7204fbe7dfc432e54cb966031824459e}} 
+\index{SpotifyAPI@{SpotifyAPI}!playTrackOnSpotify@{playTrackOnSpotify}}
+\index{playTrackOnSpotify@{playTrackOnSpotify}!SpotifyAPI@{SpotifyAPI}}
+\doxysubsubsection{\texorpdfstring{playTrackOnSpotify()}{playTrackOnSpotify()}}
+{\footnotesize\ttfamily void Spotify\+API\+::play\+Track\+On\+Spotify (\begin{DoxyParamCaption}\item[{const string \&}]{access\+Token,  }\item[{const string \&}]{track\+ID }\end{DoxyParamCaption})}
+
+
+
+method used to play a scpeific track on spotify 
+
+
+\begin{DoxyParams}{Parameters}
+{\em access\+Token} & string containg access token \\
+\hline
+{\em track\+ID} & string containing the id of the desired track to play \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSpotifyAPI_a242a44f91eefffe07bef71b0d22afc98}\label{classSpotifyAPI_a242a44f91eefffe07bef71b0d22afc98}} 
+\index{SpotifyAPI@{SpotifyAPI}!resumePlayback@{resumePlayback}}
+\index{resumePlayback@{resumePlayback}!SpotifyAPI@{SpotifyAPI}}
+\doxysubsubsection{\texorpdfstring{resumePlayback()}{resumePlayback()}}
+{\footnotesize\ttfamily void Spotify\+API\+::resume\+Playback (\begin{DoxyParamCaption}\item[{const string \&}]{access\+Token }\end{DoxyParamCaption})}
+
+
+
+method used to play a paused track 
+
+
+\begin{DoxyParams}{Parameters}
+{\em access\+Token} & string containg access token \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSpotifyAPI_a67f43560f74c43a19a3cb0eafcdb608a}\label{classSpotifyAPI_a67f43560f74c43a19a3cb0eafcdb608a}} 
+\index{SpotifyAPI@{SpotifyAPI}!setVolume@{setVolume}}
+\index{setVolume@{setVolume}!SpotifyAPI@{SpotifyAPI}}
+\doxysubsubsection{\texorpdfstring{setVolume()}{setVolume()}}
+{\footnotesize\ttfamily void Spotify\+API\+::set\+Volume (\begin{DoxyParamCaption}\item[{const string \&}]{access\+Token,  }\item[{int}]{volume\+Percent }\end{DoxyParamCaption})}
+
+
+
+method used to set the volume on spotify 
+
+
+\begin{DoxyParams}{Parameters}
+{\em access\+Token} & string containg access token \\
+\hline
+{\em volume\+Percent} & integer containg the desired level of volume \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Spotify\+API.\+h\item 
+Spotify\+API.\+cpp\end{DoxyCompactItemize}

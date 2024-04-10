@@ -1,0 +1,24 @@
+\hypertarget{md_README_autotoc_md1}{}\doxysection{Steps to compile application}\label{md_README_autotoc_md1}
+qmake app.\+pro make ./\+Application\hypertarget{md_README_autotoc_md2}{}\doxysection{Steps to clone bitbucket from WSL}\label{md_README_autotoc_md2}
+git clone url\hypertarget{md_README_autotoc_md3}{}\doxysection{Set user settins in WSL}\label{md_README_autotoc_md3}
+git config --global user.\+email \char`\"{}you@example.\+com\char`\"{} git config --global user.\+name \char`\"{}\+Your Name\char`\"{}\hypertarget{md_README_autotoc_md4}{}\doxysection{Steps to Pull Code}\label{md_README_autotoc_md4}
+\href{https://support.atlassian.com/bitbucket-cloud/docs/pull-code-from-bitbucket/}{\texttt{ https\+://support.\+atlassian.\+com/bitbucket-\/cloud/docs/pull-\/code-\/from-\/bitbucket/}} cd $<$path\+\_\+to\+\_\+local\+\_\+repo$>$ git pull\hypertarget{md_README_autotoc_md5}{}\doxysection{Steps to Push Code}\label{md_README_autotoc_md5}
+\href{https://support.atlassian.com/bitbucket-cloud/docs/push-code-to-bitbucket/}{\texttt{ https\+://support.\+atlassian.\+com/bitbucket-\/cloud/docs/push-\/code-\/to-\/bitbucket/}} cd $<$path\+\_\+to\+\_\+local\+\_\+repo$>$ git add --all git commit -\/m \textquotesingle{}$<$commit message$>$\textquotesingle{} git push\hypertarget{md_README_autotoc_md6}{}\doxysection{Requirements to Run Program}\label{md_README_autotoc_md6}
+External libraries\+: lcurl (run apt-\/get install libcurl4-\/openssl-\/dev), -\/lcpprest, -\/lssl, -\/lcrypto Spotify Premium Subscription\hypertarget{md_README_autotoc_md7}{}\doxysection{Steps to run program\+:}\label{md_README_autotoc_md7}
+-\/-\/$>$ if you have any questions about the instructions, please reach out via email to \href{mailto:rcamer8@uwo.ca}{\texttt{ rcamer8@uwo.\+ca}}
+\begin{DoxyEnumerate}
+\item Go to \href{https://developer.spotify.com/dashboard}{\texttt{ https\+://developer.\+spotify.\+com/dashboard}} and sign into spotify premium account
+\item Click on \char`\"{}\+Create app\char`\"{}, enter any name for \char`\"{}\+App name\char`\"{}, enter \char`\"{}http\+://localhost\+:3000\char`\"{} for Redirect Url
+\item Select \char`\"{}\+Web Api\char`\"{} and \char`\"{}\+Web Playback SDK\char`\"{} (if not selected by default)
+\item Once the app is created, open the app settings
+\item Copy down the Client ID and client secret (You may have to click on View client secret)
+\item Go to mainwindow.\+cpp and paste the Client ID and secret on line 9 and 10
+\item Open the terminal and enter\+: echo -\/n \char`\"{}$\ast$\+Client ID$\ast$\+:$\ast$client secret$\ast$\char`\"{} $\vert$ base64 (Replace {\itshape Client ID} and {\itshape client secret} with values copied earlier)
+\item Copy down the entire base64 code (ends with \+:)
+\item Go to Spotify\+API.\+cpp and paste the base64 code on line 6
+\item Open an instance of Spotify (open on browser or app)
+\item Run ./\+Application in terminal
+\item Copy any text after \char`\"{}code=\char`\"{} (...code=$\ast$text to copy$\ast$) in web address of site
+\item Paste copied text into pop up window and press continue
+\item Main menu will pop up 
+\end{DoxyEnumerate}

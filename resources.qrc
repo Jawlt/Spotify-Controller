@@ -1,0 +1,7 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+<qresource>
+    <file>extras/qrcode.png</file>
+    <file>extras/responses.csv</file>
+</qresource>
+</RCC>

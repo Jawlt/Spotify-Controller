@@ -1,0 +1,91 @@
+\hypertarget{classCsvData}{}\doxysection{Csv\+Data Class Reference}
+\label{classCsvData}\index{CsvData@{CsvData}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCsvData_a2b98dae069965b5d51efd59230f01dd4}{Csv\+Data}} (const string \&filename)
+\begin{DoxyCompactList}\small\item\em csvdata class that loads data from a specified file into a vetor data, that stores a list of rows(vectors), that contain cells(coumns) of strings \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCsvData_a025e98b7a8b96d56f861292e96aba898}\label{classCsvData_a025e98b7a8b96d56f861292e96aba898}} 
+void \mbox{\hyperlink{classCsvData_a025e98b7a8b96d56f861292e96aba898}{print\+Data}} () const
+\begin{DoxyCompactList}\small\item\em print function used to debug code \end{DoxyCompactList}\item 
+vector$<$ vector$<$ string $>$ $>$ \mbox{\hyperlink{classCsvData_a174c93652d79fcfe940468afc61c15c3}{get\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Getter method that returns the data (names and url together) in vector form. \end{DoxyCompactList}\item 
+vector$<$ string $>$ \mbox{\hyperlink{classCsvData_a09c87b0fbaf5c02a1873e00419c3043d}{get\+Names}} ()
+\begin{DoxyCompactList}\small\item\em Getter method that returns the names in vector form. \end{DoxyCompactList}\item 
+vector$<$ string $>$ \mbox{\hyperlink{classCsvData_a29580d1e1c26cccc5e4ded9d869626ff}{get\+URLs}} ()
+\begin{DoxyCompactList}\small\item\em Getter method that returns the URLs in vector form. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCsvData_a2e5630566a42c9a7cd8afd9f9dd6959d}\label{classCsvData_a2e5630566a42c9a7cd8afd9f9dd6959d}} 
+void \mbox{\hyperlink{classCsvData_a2e5630566a42c9a7cd8afd9f9dd6959d}{clear\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Clears the data in the csv. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCsvData_a2b98dae069965b5d51efd59230f01dd4}\label{classCsvData_a2b98dae069965b5d51efd59230f01dd4}} 
+\index{CsvData@{CsvData}!CsvData@{CsvData}}
+\index{CsvData@{CsvData}!CsvData@{CsvData}}
+\doxysubsubsection{\texorpdfstring{CsvData()}{CsvData()}}
+{\footnotesize\ttfamily Csv\+Data\+::\+Csv\+Data (\begin{DoxyParamCaption}\item[{const string \&}]{filename }\end{DoxyParamCaption})}
+
+
+
+csvdata class that loads data from a specified file into a vetor data, that stores a list of rows(vectors), that contain cells(coumns) of strings 
+
+\begin{DoxyAuthor}{Author}
+Jwalant Patel, Ross Cameron, Lance Cheong Youne 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2024-\/03-\/12
+\end{DoxyDate}
+constuctor \mbox{\hyperlink{classCsvData}{Csv\+Data}}, creates a new instance of the class for a specified file and loads data from a .csv file into the vector columns of data 
+\begin{DoxyParams}{Parameters}
+{\em filename} & is the file used to load data from \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCsvData_a174c93652d79fcfe940468afc61c15c3}\label{classCsvData_a174c93652d79fcfe940468afc61c15c3}} 
+\index{CsvData@{CsvData}!getData@{getData}}
+\index{getData@{getData}!CsvData@{CsvData}}
+\doxysubsubsection{\texorpdfstring{getData()}{getData()}}
+{\footnotesize\ttfamily vector$<$ vector$<$ string $>$ $>$ Csv\+Data\+::get\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter method that returns the data (names and url together) in vector form. 
+
+\begin{DoxyReturn}{Returns}
+data from the file entered 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCsvData_a09c87b0fbaf5c02a1873e00419c3043d}\label{classCsvData_a09c87b0fbaf5c02a1873e00419c3043d}} 
+\index{CsvData@{CsvData}!getNames@{getNames}}
+\index{getNames@{getNames}!CsvData@{CsvData}}
+\doxysubsubsection{\texorpdfstring{getNames()}{getNames()}}
+{\footnotesize\ttfamily vector$<$ string $>$ Csv\+Data\+::get\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter method that returns the names in vector form. 
+
+\begin{DoxyReturn}{Returns}
+names from the file entered 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCsvData_a29580d1e1c26cccc5e4ded9d869626ff}\label{classCsvData_a29580d1e1c26cccc5e4ded9d869626ff}} 
+\index{CsvData@{CsvData}!getURLs@{getURLs}}
+\index{getURLs@{getURLs}!CsvData@{CsvData}}
+\doxysubsubsection{\texorpdfstring{getURLs()}{getURLs()}}
+{\footnotesize\ttfamily vector$<$ string $>$ Csv\+Data\+::get\+URLs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter method that returns the URLs in vector form. 
+
+\begin{DoxyReturn}{Returns}
+URLs from the file entered 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+csvdata.\+h\item 
+csvdata.\+cpp\end{DoxyCompactItemize}
